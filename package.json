@@ -1,0 +1,21 @@
+{
+  "name": "dom-performance-testing",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Web performance project with Playwright and Lighthouse",
+  "main": "index.js",
+  "scripts": {
+    "test": "playwright test"
+  },
+  "keywords": [],
+  "author": "Alex",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.55.0",
+    "@types/node": "^24.5.2",
+    "playwright": "^1.55.0",
+    "playwright-lighthouse": "^4.0.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.2"
+  }
+}
