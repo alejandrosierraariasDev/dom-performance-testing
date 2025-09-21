@@ -1,1 +1,3 @@
-# dom-performance-testing
+1. Web Performance con TypeScript
+
+Este proyecto tiene como objetivo implementar pruebas de rendimiento web utilizando el stack de TypeScript y JavaScript, junto con Playwright para automatización y Lighthouse para métricas de performance. Se generarán reportes automáticos que incluyan puntuaciones de Lighthouse, screenshots y análisis de tiempos de carga de las páginas. Además, se integrará con GitHub Actions para ejecutar las pruebas automáticamente en cada push o pull request, permitiendo ver resultados en tiempo real y mantener un historial de performance. Se añadirá una carpeta de reportes en el repositorio para que cualquiera pueda consultar los resultados directamente.
