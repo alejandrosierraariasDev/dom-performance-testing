@@ -13,7 +13,7 @@ test.describe('Lighthouse Audit', () => {
     test.beforeAll(async () => {
         // Launch browser with remote debugging
         browser = await chromium.launch({
-            headless: false,
+            headless: true,
             args: [`--remote-debugging-port=${port}`],
             slowMo: 100  // Add some delay to ensure page loads
         });
