@@ -1,4 +1,3 @@
-// utils/performanceUtils.ts
 import { chromium, BrowserContext, Page } from 'playwright';
 import { playAudit } from 'playwright-lighthouse';
 import * as path from 'path';

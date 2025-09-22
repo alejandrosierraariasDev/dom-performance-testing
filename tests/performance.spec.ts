@@ -1,4 +1,3 @@
-// tests/performance.spec.ts
 import { test, expect } from '@playwright/test';
 import { analyzePerformance } from './performanceUtils';
 
