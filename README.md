@@ -8,13 +8,13 @@ A comprehensive web performance testing solution using Playwright and Lighthouse
 
 ## ✨ Features
 
-- 🚀 Automated performance testing with Lighthouse
-- 📊 Detailed performance reports in HTML and JSON formats
-- 🌐 Multi-language cookie consent handling
-- 📱 Mobile and desktop viewport testing
+- 🚀 Automated performance testing with Lighthouse and Playwright
+- 📊 Captures key web vitals metrics (FCP, LCP, TBT, CLS)
+- 🍪 Automatic cookie consent handling (supports multiple languages)
+- 🎯 Performance threshold validation
+- 📝 Detailed console logging of metrics
+- 🛠️ Built with TypeScript for type safety
 - 🔄 CI/CD ready with GitHub Actions
-- 📈 Performance trend tracking
-- 🛠️ Built with TypeScript for better development experience
 
 ## 🚀 Getting Started
 
@@ -39,13 +39,35 @@ A comprehensive web performance testing solution using Playwright and Lighthouse
    yarn install
    ```
 
+## 📊 Performance Metrics Tracked
+
+The test suite validates the following Web Vitals metrics:
+
+- **FCP (First Contentful Paint)**: Time to first content render (target: < 2.5s)
+- **LCP (Largest Contentful Paint)**: Time to largest content render (target: < 2.5s)
+- **TBT (Total Blocking Time)**: Sum of blocking time (target: < 300ms)
+- **CLS (Cumulative Layout Shift)**: Visual stability metric (target: < 0.1)
+
+## 🎯 Key Benefits
+
+- **Better User Experience**: A fast website keeps users engaged and reduces the chance they'll leave.
+- **More Revenue**: Faster load times lead to higher sales and conversions, especially for e-commerce sites.
+- **Improved SEO**: Search engines like Google favor fast sites, helping your website rank higher in search results.
+- **Early Problem Detection**: By running automatically with GitHub Actions, the tests catch performance issues before they go live, acting as a safety net for your code.
+
 ## 🧪 Running Tests
 
-To run the performance tests:
+### Basic Test Execution
 
 ```bash
 # Run all tests
 npx playwright test
+
+# Run in UI mode for interactive testing
+npx playwright test --ui
+
+# Run with debug logs
+DEBUG=pw:api npx playwright test
 
 # Run a specific test file
 npx playwright test tests/performance.spec.ts
